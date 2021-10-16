@@ -1,38 +1,44 @@
 import React from "react";
-import Git from "../icons/github2.png";
+import Dodel from "../icons/dodle1.png";
 import Linkedin from "../icons/linkedin.png";
+import Army from "./Army";
+import Education from "./Education";
 
-const Social = () => {
+const About = () => {
   return (
-    <div className="fullPage d-flex align-items-center justify-content-around">
+    <div
+      className="fullPage mt-5 d-flex flex-column justify-content-start align-items-center
+      "
+      id="About"
+    >
       <div className="">
-        <div>
-          <h1 className="large-title dark_mode">Elad Dadon</h1>
-        </div>
-        <div className="">
-          <h2 className="title dark_mode"> Full stack Developer</h2>
-        </div>
-        <button
-          className="btn btn-dark mt-2"
-          onClick={() => window.location.replace("/#About")}
-        >
-          About me
-        </button>
+        <h2 className="title dark_mode mt-5"> About</h2>
       </div>
 
-      <div className="d-flex gap-5 dark_mode ">
-        <a className="" href="https://github.com/elaad24" target="_blank">
-          <img className="social-icons " src={Git} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/elad-dadon-62772a1b3/"
-          target="_blank"
-        >
-          <img className="social-icons" src={Linkedin} />
-        </a>
+      <div className="d-flex text-start  justify-content-around align-items-center">
+        <div className=" d-flex flex-column px-5">
+          <div className="text width-80">
+            Industrious worker, ambitious, responsible, team player with
+            excellent communication skills, creative and self-motivated learner
+            always willing to face new challenges.
+          </div>
+
+          <div className="d-flex gap-5 pt-5 ">
+            <div className="d-flex flex-column ">
+              <Education />
+            </div>
+
+            <div className="d-flex flex-column">
+              <Army />
+            </div>
+          </div>
+        </div>
+        <div>
+          <img className="dodel" src={Dodel} alt="" />
+        </div>
       </div>
     </div>
   );
 };
 
-export default Social;
+export default About;
