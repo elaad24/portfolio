@@ -3,6 +3,9 @@ import NavBar from "./components/NavBar";
 
 import "./App.css";
 import { useEffect, useState } from "react";
+import Social from "./components/Social";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
@@ -53,6 +56,13 @@ function App() {
         <div className="circulUp dark_mode"></div>
         <div className="circulToRight dark_mode"></div>
       </div>
+      <main>
+        <Social />
+        <About />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

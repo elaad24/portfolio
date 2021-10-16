@@ -14,19 +14,32 @@
   overflow-x: hidden;
 }
 
-.header {
+.App-header {
   position: fixed;
+  width: 99%;
+  height: 10%;
+  top: 5px;
 }
 .navbar {
   height: 4.5rem;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar-bg {
-  background: white;
+  background: rgba(255, 255, 255, 0.685);
   height: 4.5rem;
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
+  filter: blur(0.4rem);
+}
+
+.navbar-bg-bottom {
+  background: rgba(255, 255, 255, 0.548);
+  height: 13rem;
   width: 100vw;
   position: absolute;
   z-index: 0;
@@ -118,6 +131,11 @@
 .social-icons {
   width: 6rem;
   height: 6rem;
+  filter: invert(0);
+}
+.bottom-nav-icons {
+  width: 3rem;
+  height: 3rem;
   filter: invert(0);
 }
 
