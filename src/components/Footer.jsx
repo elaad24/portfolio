@@ -6,7 +6,7 @@ import Whatsup from "../icons/whatsup.png";
 import Resome from "../Elad_Dadon_cv_v2.2.1.pdf";
 const Footer = () => {
   return (
-    <div className="  pt-4 mb-5">
+    <div id="Contact" className="  pt-4 mb-5">
       <div className="  navbar-bg-bottom"></div>
       <div className="navCategorys  d-flex flex-column text-center pt-3">
         <h1 className="title">Elad Dadon</h1>
