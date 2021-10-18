@@ -159,3 +159,15 @@
 .width-80 {
   width: 80%;
 }
+
+.test {
+  background-color: black;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 15px;
+}
+
+.max-imag-carousel {
+  max-width: min-content;
+  max-height: min-content;
+}
