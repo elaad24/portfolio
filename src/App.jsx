@@ -1,11 +1,13 @@
 // components
 import NavBar from "./components/NavBar";
-
-import "./App.css";
-import { useEffect, useState } from "react";
 import Social from "./components/Social";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import ProjectCard from "./components/ProjectCard";
+
+import "./App.css";
+import { useEffect, useState } from "react";
+import Data from "./carousel_DB";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
@@ -59,6 +61,11 @@ function App() {
       <main>
         <Social />
         <About />
+        <div className="d-flex flex-wrap gap-5 mt-5 px-5 justify-content-around">
+          {Data.projects.map((item) => (
+            <ProjectCard item={item} />
+          ))}
+        </div>
       </main>
       <footer>
         <Footer />
