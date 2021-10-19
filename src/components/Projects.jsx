@@ -1,14 +1,20 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
 import Data from "../carousel_DB";
+import React, { useContext } from "react";
+import { ThemeContext } from "../App";
+
 const Projects = () => {
+  const darkTheme = useContext(ThemeContext);
+
   return (
     <div
       className="  d-flex flex-column mt-5 px-5 align-items-center"
       id="Projects"
     >
       <div className="">
-        <h2 className="title dark_mode my-5"> Projects</h2>
+        <h2 className={darkTheme ? "dark-title my-5" : "title my-5"}>
+          Projects
+        </h2>
       </div>
       <div className=" d-flex justify-content-center flex-wrap gap-5">
         {Data.projects.map((item) => (

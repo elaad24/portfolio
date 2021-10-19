@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../App";
 
 const Education = () => {
+  const darkTheme = useContext(ThemeContext);
+
   return (
     <div>
-      <h3 className="mini-title ">EDUCATION</h3>
+      <h3 className={darkTheme ? "dark-mini-title" : " mini-title "}>
+        EDUCATION
+      </h3>
 
-      <div className="small-Text">
+      <div className={darkTheme ? "dark-small-Text" : " small-Text"}>
         <p>
           <b>Aug 2020 - Apr 2021</b>
           <br />
