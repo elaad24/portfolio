@@ -263,7 +263,8 @@ export default {
       ],
     },
     {
-      name: "milk and honey - intervew",
+      name: "milk and honey ",
+      addition: " intervew mini project",
       type: "front end ",
       technology: "react, redux-toolkit , responsive",
       images: [
@@ -290,7 +291,9 @@ export default {
       ],
     },
     {
-      name: "crypto front - interview project",
+      name: "crypto front",
+      addition: " intervew mini project",
+
       type: "front end ",
       technology: "react",
       images: [
