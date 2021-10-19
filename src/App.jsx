@@ -75,7 +75,6 @@ function App() {
           <main>
             <Social />
             <About />
-
             <Projects />
           </main>
           <footer>

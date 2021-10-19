@@ -36,7 +36,7 @@ const ProjectCard = ({ item }) => {
 
       {/* need to use onClickItem -- */}
       <Carousel
-        width="350px"
+        className="carousel-size"
         infiniteLoop={true}
         showThumbs={false}
         autoPlay={true}
@@ -44,11 +44,7 @@ const ProjectCard = ({ item }) => {
         showStatus={false}
       >
         {item.images.map((imge) => (
-          <div
-            className="card  d-flex text-center justify-content-center"
-            style={{ width: "fit-content" }}
-            ss
-          >
+          <div className="card  d-flex text-center justify-content-center innerCarousel">
             <h5 className="card-title">{imge.title}</h5>
             <img className="card-img-top max-imag-carousel" src={imge.image} />
           </div>

@@ -28,7 +28,7 @@
   position: fixed;
   width: 99%;
   height: 10%;
-  top: 5px;
+  top: 0.5rem;
 }
 .navbar {
   height: 4.5rem;
@@ -148,7 +148,7 @@
   transform: rotate(0deg);
   border-radius: 50%;
   position: absolute;
-  top: 25;
+  top: 25px;
   left: 1rem;
 }
 .dark-circulToRight {
@@ -293,6 +293,148 @@
   box-shadow: 5px 5px 5px rgba(153, 152, 152, 0.623);
 }
 
-.z2 {
-  z-index: 2;
+.innerCarousel {
+  width: fit-content;
+}
+.carousel-size {
+  width: 350px;
+}
+
+.socialIconGap {
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .circulUp,
+  .dark-circulUp {
+    width: 120px;
+    height: 120px;
+    right: 3rem;
+  }
+
+  .circulToRight,
+  .dark-circulToRight {
+    width: 120px !important;
+    height: 120px !important;
+    top: 20px;
+    left: 1rem;
+  }
+
+  .large-title,
+  .dark-large-title {
+    font-size: 4.2rem;
+  }
+
+  .title,
+  .dark-title {
+    font-size: 2rem;
+  }
+
+  .socialIconGap {
+    gap: 1.75rem;
+  }
+  .social-icons {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .text,
+  .dark-text {
+    font-size: 1.2rem;
+  }
+
+  .mini-title,
+  .dark-mini-title {
+    font-size: 1.5rem;
+  }
+
+  .small-Text,
+  .dark-small-Text {
+    font-size: 1rem;
+  }
+
+  .dodel {
+    height: 13rem;
+    width: 10rem;
+  }
+  .carousel-size {
+    width: 12.5rem;
+  }
+  .mini-mini-title,
+  .dark-mini-mini-title {
+    font-size: 1.25rem;
+  }
+
+  .max-imag-carousel {
+    width: 13rem;
+    height: 11rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .circulUp,
+  .dark-circulUp {
+    width: 100px;
+    height: 100px;
+    right: 2rem;
+  }
+
+  .circulToRight,
+  .dark-circulToRight {
+    width: 100px !important;
+    height: 100px !important;
+    top: 20px;
+    left: 1rem;
+  }
+
+  .large-title,
+  .dark-large-title {
+    font-size: 3.5rem;
+    margin-left: 0.3rem;
+  }
+
+  .title,
+  .dark-title {
+    font-size: 1.75rem;
+    margin-left: 0.3rem;
+  }
+  .socialIconGap {
+    gap: 1rem;
+  }
+  .social-icons {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .text,
+  .dark-text {
+    font-size: 1.2rem;
+  }
+
+  .mini-title,
+  .dark-mini-title {
+    font-size: 1.5rem;
+  }
+
+  .small-Text,
+  .dark-small-Text {
+    font-size: 1rem;
+  }
+
+  .dodel {
+    height: 13rem;
+    width: 10rem;
+  }
+  .carousel-size {
+    width: 12.5rem;
+  }
+  .mini-mini-title,
+  .dark-mini-mini-title {
+    font-size: 1.25rem;
+  }
+
+  .max-imag-carousel {
+    width: 13rem;
+    height: 11rem;
+  }
 }

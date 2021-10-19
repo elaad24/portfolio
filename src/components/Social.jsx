@@ -29,7 +29,7 @@ const Social = () => {
         </button>
       </div>
 
-      <div className="d-flex gap-5 dark_mode ">
+      <div className="d-flex socialIconGap ">
         <a className="" href="https://github.com/elaad24" target="_blank">
           <img className="social-icons " src={darkTheme ? GithubInvert : Git} />
         </a>

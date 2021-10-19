@@ -8,7 +8,7 @@ const About = () => {
   const darkTheme = useContext(ThemeContext);
   return (
     <div
-      className="fullPage mt-5 d-flex flex-column justify-content-start align-items-center
+      className="fullPage mt-5 d-flex flex-column justify-content-start  align-items-center
       "
       id="About"
     >
@@ -16,9 +16,9 @@ const About = () => {
         <h2 className={darkTheme ? "dark-title mt-5" : "title mt-5"}> About</h2>
       </div>
 
-      <div className="d-flex text-start  justify-content-around align-items-center">
+      <div className="d-flex text-justify  justify-content-center align-items-center  ">
         <div className=" d-flex flex-column px-5">
-          <div className={darkTheme ? "dark-text width-80 " : "text width-80"}>
+          <div className={darkTheme ? "dark-text  " : "text "}>
             Industrious worker, ambitious, responsible, team player with
             excellent communication skills, creative and self-motivated learner
             always willing to face new challenges.
@@ -28,7 +28,6 @@ const About = () => {
             <div className="d-flex flex-column ">
               <Education />
             </div>
-            z
             <div className="d-flex flex-column">
               <Army />
             </div>
