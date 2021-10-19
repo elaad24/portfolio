@@ -3,11 +3,13 @@ import NavBar from "./components/NavBar";
 import Social from "./components/Social";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import ProjectCard from "./components/ProjectCard";
 
+import React from "react";
 import "./App.css";
 import { useEffect, useState } from "react";
-import Data from "./carousel_DB";
+import Projects from "./components/Projects";
+
+export const ThemeContext = React.createContext();
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
@@ -28,49 +30,60 @@ function App() {
     // and if it doesnt any more its set it to normal
 
     if (moveFast < window.screen.width) {
-      document.querySelector(".circulToRight").style.top = `${moveSuperSlow}px`;
-      document.querySelector(".circulToRight").style.left = `${moveFast}px`;
+      document.querySelector("#circulToRight").style.top = `${moveSuperSlow}px`;
+      document.querySelector("#circulToRight").style.left = `${moveFast}px`;
     }
     if (moveFast > window.screen.width) {
-      document.querySelector(".circulToRight").style.width = "0px";
-      document.querySelector(".circulToRight").style.height = "0px";
+      document.querySelector("#circulToRight").style.width = "0px";
+      document.querySelector("#circulToRight").style.height = "0px";
     } else if (moveFast < window.screen.width) {
-      document.querySelector(".circulToRight").style.width = "150px";
-      document.querySelector(".circulToRight").style.height = "150px";
+      document.querySelector("#circulToRight").style.width = "150px";
+      document.querySelector("#circulToRight").style.height = "150px";
     }
 
-    document.querySelector(".circulUp").style.top = `${moveSlow}px`;
+    document.querySelector("#circulUp").style.top = `${moveSlow}px`;
     document.querySelector(
-      ".circulUp"
+      "#circulUp"
     ).style.transform = `rotate(${moveSuperSlow}deg)`;
 
     document.querySelector(
-      ".circulToRight"
+      "#circulToRight"
     ).style.transform = `rotate(${moveSuperSlow}deg)`;
   }, [scrollValue]);
 
+  useEffect(() => {
+    console.log(isDarkMode);
+  }, [isDarkMode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <NavBar darkMode={isDarkMode} callback={setIsDarkMode} />
-      </header>
-      <div className="">
-        <div className="circulUp dark_mode"></div>
-        <div className="circulToRight dark_mode"></div>
-      </div>
-      <main>
-        <Social />
-        <About />
-        <div className="d-flex flex-wrap gap-5 mt-5 px-5 justify-content-around">
-          {Data.projects.map((item) => (
-            <ProjectCard item={item} />
-          ))}
+    <>
+      <ThemeContext.Provider value={isDarkMode}>
+        <div className={isDarkMode ? "DarkApp" : "App"}>
+          <header className="App-header">
+            <NavBar darkMode={isDarkMode} callback={setIsDarkMode} />
+          </header>
+          <div className="">
+            <div
+              id="circulUp"
+              className={isDarkMode ? "dark-circulUp" : "circulUp"}
+            ></div>
+            <div
+              id="circulToRight"
+              className={isDarkMode ? "dark-circulToRight" : "circulToRight"}
+            ></div>
+          </div>
+          <main>
+            <Social />
+            <About />
+
+            <Projects />
+          </main>
+          <footer>
+            <Footer />
+          </footer>
         </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+      </ThemeContext.Provider>
+    </>
   );
 }
 
