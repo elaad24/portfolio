@@ -169,7 +169,6 @@
 .fullPage {
   height: 90vh;
   width: 99vw;
-  border: 1px solid red;
 }
 
 .large-title {
@@ -401,7 +400,6 @@
 
   .dodel {
     display: block;
-    height: 18rem;
     width: 15rem;
     z-index: 3;
   }
@@ -441,7 +439,7 @@
   .dark-circulToRight {
     width: 75px !important;
     height: 75px !important;
-    top: 20px;
+    top: 50px;
     left: 1rem;
   }
 
@@ -492,7 +490,6 @@
   }
   .dodel {
     height: 13rem;
-    width: 10rem;
   }
   .dodel-about {
     display: none;
@@ -508,5 +505,20 @@
   .max-imag-carousel {
     width: 9rem;
     height: 7rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .carousel-size {
+    width: 11rem;
+  }
+  .mini-mini-title,
+  .dark-mini-mini-title {
+    font-size: 1.2rem;
+  }
+
+  .max-imag-carousel {
+    width: 12rem;
+    height: 10rem;
   }
 }
