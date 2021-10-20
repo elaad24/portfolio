@@ -23,6 +23,7 @@ const Education = () => {
           <br />
           &#8226; High School Diploma - Gimnasia Realit
         </p>
+        <br />
         <hr />
       </div>
     </div>

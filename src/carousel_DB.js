@@ -154,7 +154,7 @@ export default {
       ],
     },
     {
-      name: "school management system",
+      name: "School system",
       type: "full stack",
       technology: "php,Mysql,responsive",
       images: [
@@ -263,8 +263,8 @@ export default {
       ],
     },
     {
-      name: "milk and honey ",
-      addition: " intervew mini project",
+      name: "milk & honey ",
+      addition: "intervew mini project",
       type: "front end ",
       technology: "react, redux-toolkit , responsive",
       images: [

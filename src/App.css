@@ -220,7 +220,17 @@
   font-weight: 800;
   font-size: 1.45rem;
 }
-
+.social-upper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 15rem;
+}
+.social-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .social-icons {
   width: 6rem;
   height: 6rem;
@@ -232,6 +242,18 @@
   filter: invert(0);
 }
 
+.about-main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 1.6rem;
+}
 .text {
   font-family: "Mukta", sans-serif;
   font-weight: 800;
@@ -243,11 +265,20 @@
   font-weight: 800;
   font-size: 1.4rem;
 }
-
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 1.6rem 0;
+}
+.about-main-text {
+}
 .small-Text {
   font-family: "Mukta", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 .dark-small-Text {
@@ -256,7 +287,12 @@
   font-weight: 700;
   font-size: 1.1rem;
 }
+
 .dodel {
+  display: none;
+}
+
+.dodel-about {
   height: 18rem;
   width: 15rem;
   z-index: 3;
@@ -303,7 +339,7 @@
 .socialIconGap {
   gap: 2rem;
 }
-
+/* ------------------------------------------------- */
 @media screen and (max-width: 768px) {
   .circulUp,
   .dark-circulUp {
@@ -320,11 +356,21 @@
     left: 1rem;
   }
 
+  .social-upper {
+    margin-top: 10rem;
+  }
+
   .large-title,
   .dark-large-title {
     font-size: 4.2rem;
   }
 
+  .social-main {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    justify-content: center;
+  }
   .title,
   .dark-title {
     font-size: 2rem;
@@ -354,9 +400,15 @@
   }
 
   .dodel {
-    height: 13rem;
-    width: 10rem;
+    display: block;
+    height: 18rem;
+    width: 15rem;
+    z-index: 3;
   }
+  .dodel-about {
+    display: none;
+  }
+
   .carousel-size {
     width: 12.5rem;
   }
@@ -372,17 +424,23 @@
 }
 
 @media screen and (max-width: 425px) {
+  .nav-titles,
+  .dark-nav-titles {
+    font-size: 1.3rem;
+    margin: 0 0.25rem;
+  }
+
   .circulUp,
   .dark-circulUp {
-    width: 100px;
-    height: 100px;
-    right: 2rem;
+    width: 75px;
+    height: 75px;
+    right: 0rem;
   }
 
   .circulToRight,
   .dark-circulToRight {
-    width: 100px !important;
-    height: 100px !important;
+    width: 75px !important;
+    height: 75px !important;
     top: 20px;
     left: 1rem;
   }
@@ -408,33 +466,47 @@
 
   .text,
   .dark-text {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
+  .about-main-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+  }
+
+  .about-section {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: 1.2rem;
+  }
   .mini-title,
   .dark-mini-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .small-Text,
   .dark-small-Text {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
-
   .dodel {
     height: 13rem;
     width: 10rem;
   }
+  .dodel-about {
+    display: none;
+  }
   .carousel-size {
-    width: 12.5rem;
+    width: 7rem;
   }
   .mini-mini-title,
   .dark-mini-mini-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .max-imag-carousel {
-    width: 13rem;
-    height: 11rem;
+    width: 9rem;
+    height: 7rem;
   }
 }

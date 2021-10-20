@@ -8,8 +8,8 @@ const ProjectCard = ({ item }) => {
     <div
       className={
         darkTheme
-          ? "mx-4  px-4 border d-flex flex-column align-items-center dark-carousel_card"
-          : "mx-4  px-4 border d-flex flex-column align-items-center carousel_card"
+          ? " px-1 border d-flex flex-column align-items-center dark-carousel_card"
+          : " px-1 border d-flex flex-column align-items-center carousel_card"
       }
     >
       <h2
@@ -22,7 +22,7 @@ const ProjectCard = ({ item }) => {
         {item.name}
       </h2>
       <h5 className={darkTheme ? "dark-text text-center" : "text text-center"}>
-        {item.addition}
+        <small>{item.addition}</small>
       </h5>
       <h3
         className={
