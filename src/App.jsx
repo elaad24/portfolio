@@ -20,7 +20,7 @@ function App() {
     setScrollValue(window.scrollY);
   });
   const moveSuperSlow = scrollValue;
-  const moveSlow = scrollValue * 1.6;
+  const moveSlow = scrollValue * 1.5;
   const moveFast = scrollValue * 2.5;
   const moveSiperFast = scrollValue * 7;
 
@@ -33,12 +33,19 @@ function App() {
       document.querySelector("#circulToRight").style.top = `${moveSuperSlow}px`;
       document.querySelector("#circulToRight").style.left = `${moveFast}px`;
     }
-    if (moveFast > window.screen.width) {
-      document.querySelector("#circulToRight").style.width = "0px";
-      document.querySelector("#circulToRight").style.height = "0px";
+    if (moveFast >= window.screen.width - 150) {
+      document.querySelector("#circulToRight").style.display = "none";
     } else if (moveFast < window.screen.width) {
-      document.querySelector("#circulToRight").style.width = "150px";
-      document.querySelector("#circulToRight").style.height = "150px";
+      document.querySelector("#circulToRight").style.display = "block";
+    }
+
+    console.log("width screen ", window.screen.width);
+    console.log("moveFast", moveFast);
+
+    if (scrollValue > window.screen.height * 2) {
+      document.querySelector("#circulUp").style.display = "none";
+    } else {
+      document.querySelector("#circulUp").style.display = "block";
     }
 
     document.querySelector("#circulUp").style.top = `${moveSlow}px`;
