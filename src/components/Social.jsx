@@ -37,6 +37,7 @@ const Social = () => {
             <img
               className="social-icons "
               src={darkTheme ? GithubInvert : Git}
+              alt="Github logo "
             />
           </a>
           <a
@@ -46,12 +47,17 @@ const Social = () => {
             <img
               className="social-icons"
               src={darkTheme ? LinkedinInvert : Linkedin}
+              alt="Linkedin logo "
             />
           </a>
         </div>
       </div>
       <div className="d-flex align-self-center">
-        <img className="dodel   " src={darkTheme ? Dodel2 : Dodel} alt="" />
+        <img
+          className="dodel   "
+          src={darkTheme ? Dodel2 : Dodel}
+          alt="dodel"
+        />
       </div>
     </div>
   );

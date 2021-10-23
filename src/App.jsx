@@ -22,7 +22,7 @@ function App() {
   const moveSuperSlow = scrollValue;
   const moveSlow = scrollValue * 1.5;
   const moveFast = scrollValue * 2.5;
-  const moveSiperFast = scrollValue * 7;
+  // const moveSiperFast = scrollValue * 7;
 
   useEffect(() => {
     // check if the location ( x value ) of the ball is greater then the size of
@@ -39,9 +39,6 @@ function App() {
       document.querySelector("#circulToRight").style.display = "block";
     }
 
-    console.log("width screen ", window.screen.width);
-    console.log("moveFast", moveFast);
-
     if (scrollValue > window.screen.height * 2) {
       document.querySelector("#circulUp").style.display = "none";
     } else {
@@ -57,10 +54,6 @@ function App() {
       "#circulToRight"
     ).style.transform = `rotate(${moveSuperSlow}deg)`;
   }, [scrollValue]);
-
-  useEffect(() => {
-    console.log(isDarkMode);
-  }, [isDarkMode]);
 
   return (
     <>

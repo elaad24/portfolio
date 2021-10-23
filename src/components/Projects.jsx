@@ -5,7 +5,6 @@ import { ThemeContext } from "../App";
 
 const Projects = () => {
   const darkTheme = useContext(ThemeContext);
-
   return (
     <div
       className="  d-flex flex-column mt-5 px-5 align-items-center"

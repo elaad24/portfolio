@@ -33,6 +33,7 @@ const Footer = () => {
             <img
               className="bottom-nav-icons "
               src={darkTheme ? GithubInvert : Git}
+              alt="git-hub logo "
             />
           </a>
           <a
@@ -42,12 +43,14 @@ const Footer = () => {
             <img
               className="bottom-nav-icons"
               src={darkTheme ? LinkedinInvert : Linkedin}
+              alt="Linkedin logo "
             />
           </a>
           <a href={Resome} download>
             <img
               className="bottom-nav-icons"
               src={darkTheme ? ResomePicInvert : ResomePic}
+              alt="Resome logo "
             />
           </a>
 
@@ -55,6 +58,7 @@ const Footer = () => {
             <img
               className="bottom-nav-icons"
               src={darkTheme ? WhatsupInvert : Whatsup}
+              alt="whatsup logo "
             />
           </a>
         </div>
