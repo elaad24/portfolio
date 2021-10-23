@@ -177,6 +177,9 @@
   font-size: 6rem;
 }
 
+.test {
+  top: 10px;
+}
 .dark-large-title {
   color: rgba(255, 255, 255, 0.863);
   font-family: "Andada Pro", serif;
@@ -338,7 +341,12 @@
 .socialIconGap {
   gap: 2rem;
 }
-/* ------------------------------------------------- */
+
+.modalImage {
+  max-width: 58vw;
+  max-height: 70vh;
+}
+
 @media screen and (max-width: 768px) {
   .circulUp,
   .dark-circulUp {
@@ -418,6 +426,10 @@
   .max-imag-carousel {
     width: 13rem;
     height: 11rem;
+  }
+  .modalImage {
+    max-width: 58vw;
+    max-height: 80vh;
   }
 }
 
