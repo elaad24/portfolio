@@ -1,60 +1,93 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "../App";
+import Modal from "./Modal";
+
 const ProjectCard = ({ item }) => {
   const darkTheme = useContext(ThemeContext);
+  const [openImage, setOpenImage] = useState("");
+  const [imageTitle, SetImageTitle] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const setModalImageData = (imageTitle, image) => {
+    setOpenImage(image);
+    SetImageTitle(imageTitle);
+  };
+
   return (
-    <div
-      className={
-        darkTheme
-          ? " px-1 border d-flex flex-column align-items-center dark-carousel_card"
-          : " px-1 border d-flex flex-column align-items-center carousel_card"
-      }
-    >
-      <h2
+    <>
+      {modalOpen ? (
+        <Modal
+          image={openImage}
+          title={imageTitle}
+          modalState={modalOpen}
+          setModalState={setModalOpen}
+        />
+      ) : (
+        ""
+      )}
+      <div
         className={
           darkTheme
-            ? "dark-mini-title my-3 text-center"
-            : "my-3 text-center mini-title "
+            ? " px-1 border d-flex flex-column align-items-center dark-carousel_card"
+            : " px-1 border d-flex flex-column align-items-center carousel_card"
         }
       >
-        {item.name}
-      </h2>
-      <h5 className={darkTheme ? "dark-text text-center" : "text text-center"}>
-        <small>{item.addition}</small>
-      </h5>
-      <h3
-        className={
-          darkTheme
-            ? "dark-mini-mini-title my-3 text-center"
-            : "mini-mini-title my-3 text-center"
-        }
-      >
-        {item.type}
-      </h3>
+        <h2
+          className={
+            darkTheme
+              ? "dark-mini-title my-3 text-center"
+              : "my-3 text-center mini-title "
+          }
+        >
+          {item.name}
+        </h2>
+        <h5
+          className={darkTheme ? "dark-text text-center" : "text text-center"}
+        >
+          <small>{item.addition || <br />}</small>
+        </h5>
+        <h3
+          className={
+            darkTheme
+              ? "dark-mini-mini-title my-3 text-center"
+              : "mini-mini-title my-3 text-center"
+          }
+        >
+          {item.type}
+        </h3>
 
-      {/* need to use onClickItem -- */}
-      <Carousel
-        className="carousel-size"
-        infiniteLoop={true}
-        showThumbs={false}
-        autoPlay={true}
-        onClickItem={(e) => console.log(e, item.images[e].image)}
-        showStatus={false}
-      >
-        {item.images.map((imge) => (
-          <div className="card  d-flex text-center justify-content-center innerCarousel">
-            <h5 className="card-title">{imge.title}</h5>
-            <img className="card-img-top max-imag-carousel" src={imge.image} />
-          </div>
-        ))}
-      </Carousel>
+        <Carousel
+          className="carousel-size"
+          infiniteLoop={true}
+          showThumbs={false}
+          autoPlay={true}
+          onChange={(e) =>
+            setModalImageData(item.images[e].title, item.images[e].image)
+          }
+          onClickItem={() => setModalOpen(true)}
+          showStatus={false}
+        >
+          {item.images.map((imge) => (
+            <div className="card  d-flex text-center justify-content-center innerCarousel">
+              <h5 className="card-title">{imge.title}</h5>
+              <img
+                className="card-img-top max-imag-carousel"
+                src={imge.image}
+              />
+            </div>
+          ))}
+        </Carousel>
 
-      <button className={darkTheme ? "btn btn-light" : "btn btn-dark mt-2"}>
-        View here
-      </button>
-    </div>
+        <button
+          className={darkTheme ? "btn btn-light mt-5  " : "btn btn-dark mt-2"}
+          onClick={() => setModalOpen(true)}
+        >
+          View here
+        </button>
+      </div>
+    </>
   );
 };
 
