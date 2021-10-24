@@ -22,6 +22,8 @@ const ProjectCard = ({ item }) => {
           image={openImage}
           title={imageTitle}
           modalState={modalOpen}
+          technologys={item.technology}
+          project_link={item.project_link}
           setModalState={setModalOpen}
         />
       ) : (
@@ -81,10 +83,19 @@ const ProjectCard = ({ item }) => {
         </Carousel>
 
         <button
-          className={darkTheme ? "btn btn-light mt-5  " : "btn btn-dark mt-2"}
-          onClick={() => setModalOpen(true)}
+          className={darkTheme ? "btn btn-light mt-2  " : "btn btn-dark mt-2"}
         >
-          View here
+          <a
+            target="_blank"
+            className={
+              darkTheme
+                ? "text-decoration-none text-dark"
+                : "text-decoration-none text-light"
+            }
+            href={item.project_link}
+          >
+            go to project
+          </a>
         </button>
       </div>
     </>
