@@ -1,7 +1,14 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
-const ItemModal = ({ title, image, modalState, setModalState = "" }) => {
+const ItemModal = ({
+  title,
+  image,
+  modalState,
+  setModalState = "",
+  technologys,
+  project_link,
+}) => {
   const closeModal = () => {
     setModalState(false);
   };
@@ -20,9 +27,19 @@ const ItemModal = ({ title, image, modalState, setModalState = "" }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <p>tec : {technologys}</p>
         <img className="modalImage" src={image} alt={`${title} photo`} />
       </Modal.Body>
       <Modal.Footer>
+        <Button variant="primary " onClick={() => closeModal()}>
+          <a
+            target="_blank"
+            className="text-decoration-none text-light"
+            href={project_link}
+          >
+            go to project
+          </a>
+        </Button>
         <Button variant="secondary" onClick={() => closeModal()}>
           close
         </Button>
