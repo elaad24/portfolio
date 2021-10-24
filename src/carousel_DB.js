@@ -60,6 +60,7 @@ export default {
       name: "e_commerce",
       type: "full stack",
       technology: "react,redux,node.js,express.js,mongo-DB,responsive",
+      project_link: "https://github.com/elaad24/fullstack_e_store-",
       images: [
         {
           title: "product page",
@@ -87,6 +88,7 @@ export default {
       name: "cash register",
       type: "full stack",
       technology: "react,redux,next.js,Mysql",
+      project_link: "https://github.com/elaad24/cashRegister",
       images: [
         {
           title: "store product interface",
@@ -130,6 +132,8 @@ export default {
       name: "interview project",
       type: "full stack",
       technology: "react,redux,node.js,express.js,Mysql,responsive",
+      project_link: "https://github.com/elaad24/Whist-home-assignment",
+
       images: [
         {
           title: "product page",
@@ -157,6 +161,7 @@ export default {
       name: "School system",
       type: "full stack",
       technology: "php,Mysql,responsive",
+      project_link: "https://github.com/elaad24/PHP-school-management-system",
       images: [
         {
           title: "first page",
@@ -188,6 +193,7 @@ export default {
       name: "mardi_gra",
       type: "front end ",
       technology: "html5 , sass , vanila js , responsive ",
+      project_link: "https://github.com/elaad24/html_css-mardi-gra-project",
       images: [
         {
           title: "opening video",
@@ -239,6 +245,7 @@ export default {
       name: "quiz game",
       type: "front end ",
       technology: "react, redux , responsive",
+      project_link: "https://github.com/elaad24/trivia_game",
       images: [
         {
           title: "start page",
@@ -267,6 +274,7 @@ export default {
       addition: "intervew mini project",
       type: "front end ",
       technology: "react, redux-toolkit , responsive",
+      project_link: "https://github.com/elaad24/GKI_home-project-e-commerce",
       images: [
         {
           title: "landing page ",
@@ -312,6 +320,7 @@ export default {
       name: "hang man game",
       type: "front end ",
       technology: "react, javaScript , responsive",
+      project_link: "https://github.com/elaad24/hangman_game",
       images: [
         {
           title: "start game",
@@ -335,6 +344,7 @@ export default {
       name: "covid api",
       type: "back end ",
       technology: "node.js, express.js , mysql",
+      project_link: "https://github.com/elaad24/covid-19-API",
       images: [
         {
           title: "get all data",
