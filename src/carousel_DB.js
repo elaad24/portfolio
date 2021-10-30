@@ -12,6 +12,12 @@ import cash_register5 from "./images/cash_register/5.png";
 import cash_register7 from "./images/cash_register/7.png";
 import cash_register9 from "./images/cash_register/9.png";
 import cash_register8 from "./images/cash_register/8.png";
+import cash_register11 from "./images/cash_register/11.png";
+import cash_register12 from "./images/cash_register/12.png";
+import cash_register13 from "./images/cash_register/13.png";
+import cash_register14 from "./images/cash_register/14.png";
+import cash_register15 from "./images/cash_register/15.png";
+import cash_register16 from "./images/cash_register/16.png";
 import interview_project1 from "./images/interview_project/1.png";
 import interview_project2 from "./images/interview_project/2.png";
 import interview_project3 from "./images/interview_project/3.png";
@@ -64,22 +70,27 @@ export default {
       images: [
         {
           title: "product page",
+          text: "full profuct page , while product added to shopping cart ",
           image: e_commerce1,
         },
         {
           title: "add new product page",
+          text: "seller page , when add new product to store",
           image: e_commerce2,
         },
         {
           title: "shoppng cart page",
+          text: "user's shopping cart ",
           image: e_commerce3,
         },
         {
           title: "home page",
+          text: "home page - to browse and see products  ",
           image: e_commerce4,
         },
         {
           title: "sing-in page",
+          text: "sing up page - with error catching ",
           image: e_commerce5,
         },
       ],
@@ -92,39 +103,78 @@ export default {
       images: [
         {
           title: "store product interface",
+          text: "cashier products imterface  ",
           image: cash_register2,
         },
         {
           title: "navigation page",
+          text: "store main menu",
           image: cash_register1,
         },
         {
           title: "cash payment page - unpaid",
+          text: "cashier cash intarfase before entering amount of money ",
           image: cash_register3,
         },
         {
           title: "cash payment page - paid",
+          text: "cashier cash intarfase after entering amount of money",
           image: cash_register4,
         },
         {
           title: "credit payment page",
+          text: " cashier credit card intarfase before paying",
           image: cash_register6,
         },
         {
           title: "store product interface -after transaction",
+          text: "cashier product interface - showing the amount of change to return",
           image: cash_register5,
         },
         {
           title: "product data page",
+          text: "admin product data table ",
           image: cash_register7,
         },
         {
           title: "edit product data",
+          text: "edit item modal  - only admin can",
           image: cash_register9,
         },
         {
-          title: "workers data page",
+          title: "employees data page",
+          text: "admin user data table",
           image: cash_register8,
+        },
+        {
+          title: "employees time clock modal",
+          text: "employees time clock interface to start / end shift",
+          image: cash_register11,
+        },
+        {
+          title: "employees start shift",
+          text: "when employees start new shift  he get alert and approve ",
+          image: cash_register12,
+        },
+        {
+          title: "employees end shift ",
+          text: "hen employees end shift he get alert and approve and data about the duration of the shift ",
+          image: cash_register16,
+        },
+        {
+          title: "time clock center page",
+          text: "admin time clock center  ",
+          image: cash_register13,
+        },
+        {
+          title: "timeClock add shift",
+          text: "admin add new shift modal",
+          image: cash_register15,
+        },
+        {
+          title: "timeClock edit shift",
+          text: "admin update shift modal ",
+          image: cash_register14,
         },
       ],
     },
@@ -137,22 +187,27 @@ export default {
       images: [
         {
           title: "product page",
+          text: "",
           image: interview_project1,
         },
         {
           title: "product + item in shopping cart ",
+          text: "",
           image: interview_project2,
         },
         {
           title: "item seles states ",
+          text: "",
           image: interview_project3,
         },
         {
           title: "product data page",
+          text: "",
           image: interview_project4,
         },
         {
           title: "edit product data",
+          text: "",
           image: interview_project5,
         },
       ],
@@ -165,26 +220,32 @@ export default {
       images: [
         {
           title: "first page",
+          text: "",
           image: sms1,
         },
         {
           title: "login page ",
+          text: "",
           image: sms2,
         },
         {
           title: "strong user contact page ",
+          text: "",
           image: sms3,
         },
         {
           title: "strong user grades page",
+          text: "",
           image: sms4,
         },
         {
           title: "strong user add grades page",
+          text: "",
           image: sms5,
         },
         {
           title: "admin page add user",
+          text: "",
           image: sms6,
         },
       ],
@@ -197,46 +258,57 @@ export default {
       images: [
         {
           title: "opening video",
+          text: "",
           image: mardi_gra1,
         },
         {
           title: "links and warning",
+          text: "",
           image: mardi_gra2,
         },
         {
           title: "mayor letter",
+          text: "",
           image: mardi_gra3,
         },
         {
           title: "parallax effect and animations",
+          text: "",
           image: mardi_gra4,
         },
         {
           title: "attractions preview",
+          text: "",
           image: mardi_gra5,
         },
         {
           title: "about page",
+          text: "",
           image: mardi_gra6,
         },
         {
           title: "media page",
+          text: "",
           image: mardi_gra8,
         },
         {
           title: "inside media category ",
+          text: "",
           image: mardi_gra9,
         },
         {
           title: "store page ",
+          text: "",
           image: mardi_gra10,
         },
         {
           title: "FAQ page ",
+          text: "",
           image: mardi_gra11,
         },
         {
           title: "cantact us ",
+          text: "",
           image: mardi_gra12,
         },
       ],
@@ -249,22 +321,27 @@ export default {
       images: [
         {
           title: "start page",
+          text: "",
           image: quiz1,
         },
         {
           title: "quiz interface",
+          text: "",
           image: quiz2,
         },
         {
           title: "true answer interface",
+          text: "",
           image: quiz3,
         },
         {
           title: "false answer interface",
+          text: "",
           image: quiz4,
         },
         {
           title: "results page",
+          text: "",
           image: quiz6,
         },
       ],
@@ -278,22 +355,27 @@ export default {
       images: [
         {
           title: "landing page ",
+          text: "",
           image: milk_and_honey1,
         },
         {
           title: "product page - by category",
+          text: "",
           image: milk_and_honey2,
         },
         {
           title: "contact us page",
+          text: "",
           image: milk_and_honey3,
         },
         {
           title: "shopping cart page ",
+          text: "",
           image: milk_and_honey4,
         },
         {
           title: "product page ",
+          text: "",
           image: milk_and_honey5,
         },
       ],
@@ -307,10 +389,12 @@ export default {
       images: [
         {
           title: "crypto data page",
+          text: "",
           image: crypto_front1,
         },
         {
           title: "crypto data - highlight",
+          text: "",
           image: crypto_front2,
         },
       ],
@@ -324,18 +408,22 @@ export default {
       images: [
         {
           title: "start game",
+          text: "",
           image: hang_man3,
         },
         {
           title: "lose in game",
+          text: "",
           image: hang_man2,
         },
         {
           title: "win in game",
+          text: "",
           image: hang_man1,
         },
         {
           title: "before game",
+          text: "",
           image: hang_man4,
         },
       ],
@@ -348,14 +436,17 @@ export default {
       images: [
         {
           title: "get all data",
+          text: "",
           image: api1,
         },
         {
           title: "get data by query string",
+          text: "",
           image: api2,
         },
         {
           title: "get data by params",
+          text: "",
           image: api3,
         },
       ],
