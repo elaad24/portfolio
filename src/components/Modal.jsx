@@ -3,6 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 
 const ItemModal = ({
   title,
+  text,
   image,
   modalState,
   setModalState = "",
@@ -28,6 +29,7 @@ const ItemModal = ({
       </Modal.Header>
       <Modal.Body>
         <p>tec : {technologys}</p>
+        <p>what you see : {text}</p>
         <img className="modalImage" src={image} alt={`${title} photo`} />
       </Modal.Body>
       <Modal.Footer>

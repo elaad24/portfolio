@@ -8,11 +8,13 @@ const ProjectCard = ({ item }) => {
   const darkTheme = useContext(ThemeContext);
   const [openImage, setOpenImage] = useState("");
   const [imageTitle, SetImageTitle] = useState("");
+  const [imageText, setImageText] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
 
-  const setModalImageData = (imageTitle, image) => {
+  const setModalImageData = (imageTitle, text, image) => {
     setOpenImage(image);
     SetImageTitle(imageTitle);
+    setImageText(text);
   };
 
   return (
@@ -20,6 +22,7 @@ const ProjectCard = ({ item }) => {
       {modalOpen ? (
         <Modal
           image={openImage}
+          text={imageText}
           title={imageTitle}
           modalState={modalOpen}
           technologys={item.technology}
@@ -66,7 +69,11 @@ const ProjectCard = ({ item }) => {
           showThumbs={false}
           autoPlay={true}
           onChange={(e) =>
-            setModalImageData(item.images[e].title, item.images[e].image)
+            setModalImageData(
+              item.images[e].title,
+              item.images[e].text,
+              item.images[e].image
+            )
           }
           onClickItem={() => setModalOpen(true)}
           showStatus={false}
