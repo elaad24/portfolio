@@ -15,7 +15,7 @@ const Projects = () => {
           Projects
         </h2>
       </div>
-      <div className=" d-flex justify-content-center flex-wrap gap-5">
+      <div className=" d-flex justify-content-center flex-wrap Gap  ">
         {Data.projects.map((item) => (
           <ProjectCard item={item} />
         ))}

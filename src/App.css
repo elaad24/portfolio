@@ -349,6 +349,10 @@
   max-height: 70vh;
 }
 
+.Gap {
+  gap: 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .circulUp,
   .dark-circulUp {
@@ -520,6 +524,9 @@
     width: 9rem;
     height: 7rem;
   }
+  .Gap {
+    gap: 1em 0.5rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -534,5 +541,9 @@
   .max-imag-carousel {
     width: 12rem;
     height: 10rem;
+  }
+
+  .Gap {
+    gap: 1em;
   }
 }
