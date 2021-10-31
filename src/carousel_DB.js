@@ -187,27 +187,27 @@ export default {
       images: [
         {
           title: "product page",
-          text: "",
+          text: "home page - to browse and see products",
           image: interview_project1,
         },
         {
           title: "product + item in shopping cart ",
-          text: "",
+          text: "home page + products in shopping cart ",
           image: interview_project2,
         },
         {
           title: "item seles states ",
-          text: "",
+          text: "admin stats page - stats about the sales ",
           image: interview_project3,
         },
         {
           title: "product data page",
-          text: "",
+          text: "admin page - edit item date  ",
           image: interview_project4,
         },
         {
           title: "edit product data",
-          text: "",
+          text: "item edit modal - to cahnge data about the product",
           image: interview_project5,
         },
       ],
@@ -220,32 +220,32 @@ export default {
       images: [
         {
           title: "first page",
-          text: "",
+          text: "landing page - page for navigation and to send to log ing page ",
           image: sms1,
         },
         {
           title: "login page ",
-          text: "",
+          text: "ragular login page ",
           image: sms2,
         },
         {
           title: "strong user contact page ",
-          text: "",
+          text: "contact page for strong user - can see all the user contact  ",
           image: sms3,
         },
         {
           title: "strong user grades page",
-          text: "",
+          text: "grades page for strong user - can see all the user grades",
           image: sms4,
         },
         {
           title: "strong user add grades page",
-          text: "",
+          text: "add grade page - only strong user can accsess ",
           image: sms5,
         },
         {
           title: "admin page add user",
-          text: "",
+          text: "add user - only admin can do it ",
           image: sms6,
         },
       ],
