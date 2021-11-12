@@ -346,12 +346,17 @@
 }
 
 .modalImage {
-  max-width: 58vw;
-  max-height: 70vh;
+  width: 100%;
+  /*  max-width: 58vw;
+  max-height: 70vh; */
 }
 
 .Gap {
   gap: 1.5rem;
+}
+
+.overFlowHidden {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -435,7 +440,7 @@
     height: 11rem;
   }
   .modalImage {
-    width: max-content;
+    width: 100%;
     /*  max-width: 58vw;
     max-height: 80vh; */
   }
