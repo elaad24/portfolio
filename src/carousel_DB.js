@@ -18,6 +18,7 @@ import cash_register13 from "./images/cash_register/13.png";
 import cash_register14 from "./images/cash_register/14.png";
 import cash_register15 from "./images/cash_register/15.png";
 import cash_register16 from "./images/cash_register/16.png";
+import cash_register17 from "./images/cash_register/17.png";
 import interview_project1 from "./images/interview_project/1.png";
 import interview_project2 from "./images/interview_project/2.png";
 import interview_project3 from "./images/interview_project/3.png";
@@ -175,6 +176,11 @@ export default {
           title: "timeClock edit shift",
           text: "admin update shift modal ",
           image: cash_register14,
+        },
+        {
+          title: "store's stats from DB",
+          text: "stats for the store that display the transactions and more ",
+          image: cash_register17,
         },
       ],
     },
