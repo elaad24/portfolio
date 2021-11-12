@@ -314,7 +314,8 @@
 }
 
 .max-imag-carousel {
-  max-width: min-content;
+  width: 100%;
+  /*  max-width: max-content; */
   height: 15rem;
 }
 
@@ -334,7 +335,7 @@
 }
 
 .innerCarousel {
-  width: fit-content;
+  width: 100%;
 }
 .carousel-size {
   width: 350px;
@@ -422,7 +423,7 @@
   }
 
   .carousel-size {
-    width: 12.5rem;
+    width: 19rem;
   }
   .mini-mini-title,
   .dark-mini-mini-title {
@@ -434,8 +435,9 @@
     height: 11rem;
   }
   .modalImage {
-    max-width: 58vw;
-    max-height: 80vh;
+    width: max-content;
+    /*  max-width: 58vw;
+    max-height: 80vh; */
   }
 }
 
@@ -513,7 +515,7 @@
     display: none;
   }
   .carousel-size {
-    width: 7rem;
+    width: 20rem;
   }
   .mini-mini-title,
   .dark-mini-mini-title {
@@ -531,7 +533,7 @@
 
 @media screen and (max-width: 320px) {
   .carousel-size {
-    width: 11rem;
+    width: 17rem;
   }
   .mini-mini-title,
   .dark-mini-mini-title {
@@ -544,6 +546,6 @@
   }
 
   .Gap {
-    gap: 1em;
+    gap: 1.5em;
   }
 }
