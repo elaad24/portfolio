@@ -4,7 +4,7 @@ import ResomePic from "../icons/resomepic.png";
 import ResomePicInvert from "../icons/resomepicInvert.png";
 import Whatsup from "../icons/whatsup.png";
 import WhatsupInvert from "../icons/WhatsupInvert.png";
-import Resome from "../Elad_Dadon_cv_v2.2.1.pdf";
+import Resome from "../Elad_Dadon_cv_v2.2.2.pdf";
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
 import GithubInvert from "../icons/GithubInvert.png";
