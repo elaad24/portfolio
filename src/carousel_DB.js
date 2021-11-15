@@ -264,57 +264,57 @@ export default {
       images: [
         {
           title: "opening video",
-          text: "",
+          text: "The opening video for the home page ",
           image: mardi_gra1,
         },
         {
           title: "links and warning",
-          text: "",
+          text: "importent links and covid-19 warning",
           image: mardi_gra2,
         },
         {
           title: "mayor letter",
-          text: "",
+          text: "mayor invitation for the parade ",
           image: mardi_gra3,
         },
         {
           title: "parallax effect and animations",
-          text: "",
+          text: "css effects and animation embedded trow the home page ",
           image: mardi_gra4,
         },
         {
           title: "attractions preview",
-          text: "",
+          text: "recomendations for hotles and attractions",
           image: mardi_gra5,
         },
         {
           title: "about page",
-          text: "",
+          text: "the about page ",
           image: mardi_gra6,
         },
         {
           title: "media page",
-          text: "",
+          text: "media page that is send the user to the target destination",
           image: mardi_gra8,
         },
         {
           title: "inside media category ",
-          text: "",
+          text: "photos library the is catecorise for every subject ",
           image: mardi_gra9,
         },
         {
           title: "store page ",
-          text: "",
+          text: "the store page that provides piclinks to their main site ",
           image: mardi_gra10,
         },
         {
           title: "FAQ page ",
-          text: "",
+          text: "frequently asked question page  ",
           image: mardi_gra11,
         },
         {
           title: "cantact us ",
-          text: "",
+          text: "cantact us form ",
           image: mardi_gra12,
         },
       ],
@@ -327,27 +327,27 @@ export default {
       images: [
         {
           title: "start page",
-          text: "",
+          text: "First page , set setting for the game ",
           image: quiz1,
         },
         {
           title: "quiz interface",
-          text: "",
+          text: "in game qestion - true/false , before user answer ",
           image: quiz2,
         },
         {
           title: "true answer interface",
-          text: "",
+          text: "in game qestion - multipule choice  , after user correct answer",
           image: quiz3,
         },
         {
           title: "false answer interface",
-          text: "",
+          text: "in game qestion - multipule choice  , after user incorrect answer",
           image: quiz4,
         },
         {
           title: "results page",
-          text: "",
+          text: "End game results page and game setting ",
           image: quiz6,
         },
       ],
@@ -361,27 +361,27 @@ export default {
       images: [
         {
           title: "landing page ",
-          text: "",
+          text: "home page and latest products ",
           image: milk_and_honey1,
         },
         {
           title: "product page - by category",
-          text: "",
+          text: "product page - order by category  ",
           image: milk_and_honey2,
         },
         {
           title: "contact us page",
-          text: "",
+          text: "contact us page with google map api ",
           image: milk_and_honey3,
         },
         {
           title: "shopping cart page ",
-          text: "",
+          text: "shopping cart page with the ability to delete / increse/decrese item quantity",
           image: milk_and_honey4,
         },
         {
           title: "product page ",
-          text: "",
+          text: "dynamic generated product page  ",
           image: milk_and_honey5,
         },
       ],
