@@ -359,10 +359,20 @@
   overflow: hidden;
 }
 
-.aaa {
+.transparent {
   background-color: transparent !important;
 }
 
+.iconCard {
+  border: 1px solid rgba(128, 128, 128, 0.459);
+  background: rgba(255, 255, 255, 0.438);
+  backdrop-filter: blur(0.4rem);
+}
+
+.iconCardSize {
+  width: 16rem;
+  height: 8rem;
+}
 @media screen and (max-width: 768px) {
   .circulUp,
   .dark-circulUp {

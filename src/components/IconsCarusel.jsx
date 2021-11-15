@@ -15,13 +15,14 @@ import Mongodb from "../images/icons/mongodb.png";
 import Redux from "../images/icons/redux.png";
 import Js from "../images/icons/js.png";
 import Sass from "../images/icons/sass.png";
-import react from "../images/icons/react.jpg";
-import Php from "../images/icons/php.jpg";
-import Xampp from "../images/icons/xampp.jpg";
+import react from "../images/icons/react.png";
+import Php from "../images/icons/php.png";
+import Xampp from "../images/icons/xampp.png";
 import npm from "../images/icons/npm.png";
 import Vscode from "../images/icons/vscode.png";
 import Sql from "../images/icons/sql.png";
 import Node from "../images/icons/nodejs.png";
+import photoshop from "../images/icons/photoshop.png";
 
 const IconsCarusel = () => {
   const darkTheme = useContext(ThemeContext);
@@ -47,13 +48,25 @@ const IconsCarusel = () => {
     { pic: Vscode, name: "Vscode" },
     { pic: Sql, name: "Sql" },
     { pic: Node, name: "Node" },
+    { pic: photoshop, name: "Photoshop" },
   ];
 
   return (
     <div className=" my-4 d-flex flex-column ">
-      <h3 className="text-center ">PROGRAMMING LANGUAGES & TOOLS</h3>
+      <h2
+        className={
+          darkTheme
+            ? "dark-title mt-5 mb-2 text-center"
+            : "title mt-5 mb-2 text-center"
+        }
+      >
+        PROGRAMMING LANGUAGES & TOOLS
+      </h2>
       <Carousel
+        showStatus={false}
         autoPlay={true}
+        showIndicators={false}
+        showArrows={false}
         infiniteLoop={true}
         showThumbs={false}
         centerMode={true}
@@ -62,11 +75,9 @@ const IconsCarusel = () => {
         interval="1500"
       >
         {iconList.map((item) => (
-          <div class="card aaa ">
+          <div class=" iconCard  ">
             <img
-              class="card-img-top"
-              width="250"
-              height="100"
+              class=" mt-2 card-img-top iconCardSize"
               src={item.pic}
               alt="Card image cap"
             />
