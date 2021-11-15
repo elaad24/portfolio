@@ -28,9 +28,9 @@ const IconsCarusel = () => {
   const darkTheme = useContext(ThemeContext);
 
   const iconList = [
-    { pic: Nextjs, name: "Next JS" },
-    { pic: bootstrap, name: "Bootstrap 4" },
-    { pic: express, name: "Express JS" },
+    { pic: Nextjs, name: "NextJS" },
+    { pic: bootstrap, name: "Bootstrap4" },
+    { pic: express, name: "ExpressJS" },
     { pic: postman, name: "Postman" },
     { pic: Html, name: "Html" },
     { pic: Mongodb, name: "Mongodb" },
@@ -66,29 +66,43 @@ const IconsCarusel = () => {
         showStatus={false}
         autoPlay={true}
         showIndicators={false}
-        showArrows={false}
+        showArrows={true}
         infiniteLoop={true}
         showThumbs={false}
         centerMode={true}
         stopOnHover={false}
-        centerSlidePercentage={15}
+        centerSlidePercentage={19}
         interval="1500"
       >
         {iconList.map((item) => (
-          <div class=" iconCard  ">
+          <div class=" iconCard   ">
             <img
-              class=" mt-2 card-img-top iconCardSize"
+              class=" my-2 card-img-top iconCardSize"
               src={item.pic}
               alt="Card image cap"
             />
-            <div class="card-body">
-              <p class="card-text">
-                <b>{item.name}</b>
-              </p>
-            </div>
           </div>
         ))}
       </Carousel>
+      <div>
+        <h4
+          className={
+            darkTheme
+              ? "dark-title mt-5 mb-2 text-center"
+              : "title mt-5 mb-2 text-center"
+          }
+        >
+          List of them
+        </h4>
+
+        <div
+          className={
+            darkTheme ? "dark-text text-center mx-3" : "text text-center mx-3"
+          }
+        >
+          {iconList.map((item) => `${item.name} ,`)}
+        </div>
+      </div>
     </div>
   );
 };

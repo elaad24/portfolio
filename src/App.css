@@ -359,10 +359,6 @@
   overflow: hidden;
 }
 
-.transparent {
-  background-color: transparent !important;
-}
-
 .iconCard {
   border: 1px solid rgba(128, 128, 128, 0.459);
   background: rgba(255, 255, 255, 0.438);
@@ -458,6 +454,11 @@
     /*  max-width: 58vw;
     max-height: 80vh; */
   }
+
+  .iconCardSize {
+    width: 14rem;
+    height: 6rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -548,6 +549,10 @@
   .Gap {
     gap: 1em 0.5rem;
   }
+
+  .iconCardSize {
+    height: 3rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -566,5 +571,9 @@
 
   .Gap {
     gap: 1.5em;
+  }
+
+  .iconCardSize {
+    height: 3rem;
   }
 }
