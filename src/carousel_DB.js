@@ -395,12 +395,12 @@ export default {
       images: [
         {
           title: "crypto data page",
-          text: "",
+          text: "display for random crypto coinse ",
           image: crypto_front1,
         },
         {
           title: "crypto data - highlight",
-          text: "",
+          text: "after user picked couple  crypto ",
           image: crypto_front2,
         },
       ],
@@ -414,22 +414,22 @@ export default {
       images: [
         {
           title: "start game",
-          text: "",
+          text: "inition of the game -before user answer",
           image: hang_man3,
         },
         {
           title: "lose in game",
-          text: "",
+          text: "the end of the game - the user lost ",
           image: hang_man2,
         },
         {
           title: "win in game",
-          text: "",
+          text: "the end of the game - the user win",
           image: hang_man1,
         },
         {
           title: "before game",
-          text: "",
+          text: "befor game inition",
           image: hang_man4,
         },
       ],
@@ -442,17 +442,17 @@ export default {
       images: [
         {
           title: "get all data",
-          text: "",
+          text: "get all data from the api - url blank",
           image: api1,
         },
         {
           title: "get data by query string",
-          text: "",
+          text: "get specific data - by url param and querry sting ",
           image: api2,
         },
         {
           title: "get data by params",
-          text: "",
+          text: "get specific data - by url param ",
           image: api3,
         },
       ],
