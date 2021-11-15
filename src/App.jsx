@@ -8,6 +8,7 @@ import React from "react";
 import "./App.css";
 import { useEffect, useState } from "react";
 import Projects from "./components/Projects";
+import IconsCarusel from "./components/IconsCarusel";
 
 export const ThemeContext = React.createContext();
 
@@ -78,6 +79,7 @@ function App() {
             <Projects />
           </main>
           <footer>
+            <IconsCarusel />
             <Footer />
           </footer>
         </div>

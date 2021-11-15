@@ -359,6 +359,10 @@
   overflow: hidden;
 }
 
+.aaa {
+  background-color: transparent !important;
+}
+
 @media screen and (max-width: 768px) {
   .circulUp,
   .dark-circulUp {
