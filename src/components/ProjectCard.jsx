@@ -67,7 +67,7 @@ const ProjectCard = ({ item }) => {
           className="carousel-size"
           infiniteLoop={true}
           showThumbs={false}
-          autoPlay={true}
+          autoPlay={false}
           onChange={(e) =>
             setModalImageData(
               item.images[e].title,

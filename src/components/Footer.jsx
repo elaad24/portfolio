@@ -4,7 +4,7 @@ import ResomePic from "../icons/resomepic.png";
 import ResomePicInvert from "../icons/resomepicInvert.png";
 import Whatsup from "../icons/whatsup.png";
 import WhatsupInvert from "../icons/WhatsupInvert.png";
-import Resome from "../Elad_Dadon_cv_v2.2.2.pdf";
+/* import Resome from "../Elad_Dadon_cv_v2.2.2.pdf";*/
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
 import GithubInvert from "../icons/GithubInvert.png";
@@ -46,21 +46,13 @@ const Footer = () => {
               alt="Linkedin logo "
             />
           </a>
-          <a href={Resome} download>
+          {/*   <a href={Resome} download>
             <img
               className="bottom-nav-icons"
               src={darkTheme ? ResomePicInvert : ResomePic}
               alt="Resome logo "
             />
-          </a>
-
-          <a href="https://wa.me/+972524893127?text=Hey%2C+%0D%0AI+have+been+in+your+site+%2C+%0D%0Avery+nice+site+-+good+job+.+%0D%0A%F0%9F%98%8A">
-            <img
-              className="bottom-nav-icons"
-              src={darkTheme ? WhatsupInvert : Whatsup}
-              alt="whatsup logo "
-            />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
