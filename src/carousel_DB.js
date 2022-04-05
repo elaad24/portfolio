@@ -60,6 +60,13 @@ import hang_man4 from "./images/hang_man/4.png";
 import api1 from "./images/api/1.png";
 import api2 from "./images/api/2.png";
 import api3 from "./images/api/3.png";
+import weather1 from "./images/weather/1.png";
+import weather2 from "./images/weather/2.png";
+import weather3 from "./images/weather/3.png";
+import weather4 from "./images/weather/4.png";
+import weather5 from "./images/weather/5.png";
+import weather6 from "./images/weather/6.png";
+import weather7 from "./images/weather/7.png";
 
 export default {
   projects: [
@@ -253,6 +260,51 @@ export default {
           title: "admin page add user",
           text: "add user - only admin can do it ",
           image: sms6,
+        },
+      ],
+    },
+    {
+      name: "Weather App",
+      type: "front end",
+      technology: "react, redux-toolkit , responsive, axios, bootstrap",
+      project_link: "https://github.com/elaad24/PHP-school-management-system",
+      images: [
+        {
+          title: "home page - classic ",
+          text: "landing page - page in full width for desktops  -by defult dark mood off and temp in C ",
+          image: weather1,
+        },
+        {
+          title: "home page - dark mode and imperial units   ",
+          text: "landing page - dark mode ON and temp in F - page in full width for desktops ",
+          image: weather2,
+        },
+
+        {
+          title: "searched for location page - like button clicked ",
+          text: "after the user searched for specific location - like button clicked and temp in F - page in full width for desktops ",
+          image: weather3,
+        },
+        {
+          title: "responsive - searched for location page -dark mode ",
+          text: "after the user searched for specific location and dark mood them is ON and location is liked ",
+          image: weather4,
+        },
+        {
+          title: "responsive - home page after units change to F ",
+          text: "responsive after the use change the units the Toastify run  ",
+          image: weather5,
+        },
+        {
+          title: "searche bar & debounce - full page ",
+          text: "when the user start type the auto complit start and the debounce  ",
+          image: weather6,
+        },
+
+        {
+          title: "home page  full width - after units change to F",
+          text: "responsive after the use change the units the Toastify run",
+          image: weather7,
         },
       ],
     },
