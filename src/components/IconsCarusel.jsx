@@ -23,6 +23,11 @@ import Vscode from "../imagesWEBP/iconsWEBP/vscode.webp";
 import Sql from "../imagesWEBP/iconsWEBP/sql.webp";
 import Node from "../imagesWEBP/iconsWEBP/nodejs.webp";
 import photoshop from "../imagesWEBP/iconsWEBP/photoshop.webp";
+import redis from "../imagesWEBP/iconsWEBP/redis.webp";
+import graphql from "../imagesWEBP/iconsWEBP/graphql.webp";
+import elasticSearch from "../imagesWEBP/iconsWEBP/elasticSearch.webp";
+import reactNative from "../imagesWEBP/iconsWEBP/reactNative.webp";
+
 
 const IconsCarusel = () => {
   const darkTheme = useContext(ThemeContext);
@@ -49,6 +54,10 @@ const IconsCarusel = () => {
     { pic: Sql, name: "Sql" },
     { pic: Node, name: "Node" },
     { pic: photoshop, name: "Photoshop" },
+    { pic: redis, name: "Redis" },
+    { pic: graphql, name: "GraphQL" },
+    { pic: elasticSearch, name: "Elastic Search" },
+    { pic: reactNative, name: "React Native" },
   ];
 
   return (

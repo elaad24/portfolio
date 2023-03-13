@@ -7,21 +7,15 @@ import Title from "./Title";
 const Projects = () => {
   const darkTheme = useContext(ThemeContext);
   return (
-    <div
-    style={{width:"90%", margin:"auto"}}
-      className=""
-      id="Projects"
-    >
-      
-        <div className="">
-          <Title headerTag={2} text={"Projects"} />
-        </div>
-        {console.log("Data",Data)}
-        <div className=" d-flex justify-content-center flex-wrap Gap  ">
-          {Data?.projects?.map((item) => (
-            <ProjectCard item={item} />
-          ))}
-      
+    <div style={{ width: "90%", margin: "auto" }} className="" id="Projects">
+      <div className="">
+        <Title headerTag={2} text={"Projects"} />
+      </div>
+      {console.log("Data", Data)}
+      <div className=" d-flex justify-content-center flex-wrap Gap  ">
+        {Data?.map((item) => (
+          <ProjectCard item={item} />
+        ))}
       </div>
     </div>
   );

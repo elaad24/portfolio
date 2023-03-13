@@ -354,7 +354,8 @@
 
 .max-imag-carousel {
   height: 12rem;
-  width: 100%;
+  width: fit-content !important;
+  align-self: center;
    max-width: 20rem;
 }
 

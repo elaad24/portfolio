@@ -43,7 +43,7 @@ const ProjectCard = ({ item }) => {
           className="carousel-size"
           infiniteLoop={true}
           showThumbs={false}
-          autoPlay={false}
+          autoPlay={true}
           showStatus={false}
         >
           {item.imagesWEBP.map((imge) => (
