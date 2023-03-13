@@ -1,15 +1,15 @@
-import Git from "../icons/github2.png";
-import Linkedin from "../icons/linkedin.png";
-import ResomePic from "../icons/resomepic.png";
-import ResomePicInvert from "../icons/resomepicInvert.png";
-import Whatsup from "../icons/whatsup.png";
-import WhatsupInvert from "../icons/WhatsupInvert.png";
+import Git from "../iconsWEBP/github2.webp";
+import Linkedin from "../iconsWEBP/linkedin.webp";
+import ResomePic from "../iconsWEBP/resomepic.webp";
+import ResomePicInvert from "../iconsWEBP/resomepicInvert.webp";
+import Whatsup from "../iconsWEBP/whatsup.webp";
+import WhatsupInvert from "../iconsWEBP/WhatsupInvert.webp";
 /* import Resome from "../Elad_Dadon_cv_v2.2.2.pdf";*/
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
-import GithubInvert from "../icons/GithubInvert.png";
+import GithubInvert from "../iconsWEBP/GithubInvert.webp";
 
-import LinkedinInvert from "../icons/LinkedinInvert.png";
+import LinkedinInvert from "../iconsWEBP/LinkedinInvert.webp";
 
 const Footer = () => {
   const darkTheme = useContext(ThemeContext);

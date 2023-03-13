@@ -16,7 +16,7 @@ const ItemModal = ({
 
   return (
     <Modal
-      size="lg"
+      size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       show={modalState}
@@ -28,9 +28,12 @@ const ItemModal = ({
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <div style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+
         <p>tec : {technologys}</p>
         <p>what you see : {text}</p>
         <img className="modalImage" src={image} alt={`${title} photo`} />
+        </div>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="primary " onClick={() => closeModal()}>

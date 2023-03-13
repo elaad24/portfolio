@@ -2,27 +2,27 @@ import React, { useContext } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { ThemeContext } from "../App";
-import Nextjs from "../images/icons/Nextjs.png";
-import bootstrap from "../images/icons/bootstrap.png";
-import express from "../images/icons/express.png";
-import postman from "../images/icons/postman.png";
-import Html from "../images/icons/html.png";
-import GitHub from "../images/icons/github.png";
-import Git from "../images/icons/git.png";
-import Css from "../images/icons/css.png";
-import Mysql from "../images/icons/mysql.png";
-import Mongodb from "../images/icons/mongodb.png";
-import Redux from "../images/icons/redux.png";
-import Js from "../images/icons/js.png";
-import Sass from "../images/icons/sass.png";
-import react from "../images/icons/react.png";
-import Php from "../images/icons/php.png";
-import Xampp from "../images/icons/xampp.png";
-import npm from "../images/icons/npm.png";
-import Vscode from "../images/icons/vscode.png";
-import Sql from "../images/icons/sql.png";
-import Node from "../images/icons/nodejs.png";
-import photoshop from "../images/icons/photoshop.png";
+import Nextjs from "../imagesWEBP/iconsWEBP/Nextjs.webp";
+import bootstrap from "../imagesWEBP/iconsWEBP/bootstrap.webp";
+import express from "../imagesWEBP/iconsWEBP/express.webp";
+import postman from "../imagesWEBP/iconsWEBP/postman.webp";
+import Html from "../imagesWEBP/iconsWEBP/html.webp";
+import GitHub from "../imagesWEBP/iconsWEBP/github.webp";
+import Git from "../imagesWEBP/iconsWEBP/git.webp";
+import Css from "../imagesWEBP/iconsWEBP/css.webp";
+import Mysql from "../imagesWEBP/iconsWEBP/mysql.webp";
+import Mongodb from "../imagesWEBP/iconsWEBP/mongodb.webp";
+import Redux from "../imagesWEBP/iconsWEBP/redux.webp";
+import Js from "../imagesWEBP/iconsWEBP/js.webp";
+import Sass from "../imagesWEBP/iconsWEBP/sass.webp";
+import react from "../imagesWEBP/iconsWEBP/react.webp";
+import Php from "../imagesWEBP/iconsWEBP/php.webp";
+import Xampp from "../imagesWEBP/iconsWEBP/xampp.webp";
+import npm from "../imagesWEBP/iconsWEBP/npm.webp";
+import Vscode from "../imagesWEBP/iconsWEBP/vscode.webp";
+import Sql from "../imagesWEBP/iconsWEBP/sql.webp";
+import Node from "../imagesWEBP/iconsWEBP/nodejs.webp";
+import photoshop from "../imagesWEBP/iconsWEBP/photoshop.webp";
 
 const IconsCarusel = () => {
   const darkTheme = useContext(ThemeContext);
@@ -75,9 +75,9 @@ const IconsCarusel = () => {
         interval="1500"
       >
         {iconList.map((item) => (
-          <div class=" iconCard   ">
+          <div className=" iconCard   ">
             <img
-              class=" my-2 card-img-top iconCardSize"
+              className=" my-2 card-img-top iconCardSize bottomCarouselImg"
               src={item.pic}
               alt="Card image cap"
             />
@@ -92,7 +92,7 @@ const IconsCarusel = () => {
               : "title mt-5 mb-2 text-center"
           }
         >
-          List of them
+          List of technologies
         </h4>
 
         <div

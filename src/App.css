@@ -29,6 +29,7 @@
   width: 98%;
   height: 10%;
   top: 0.5rem;
+  z-index: 10;
 }
 .navbar {
   display: flex;
@@ -194,6 +195,20 @@
   font-weight: 800;
   font-size: 2.4rem;
 }
+
+.titleThem {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0.582),
+    rgba(255, 255, 255, 0.192)
+  );
+  width: max-content;
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.192);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
 .dark-title {
   color: rgba(255, 255, 255, 0.863);
   font-family: "Andada Pro", serif;
@@ -201,6 +216,17 @@
   font-size: 2.4rem;
 }
 
+.DarkTitleThem {
+  background-image: linear-gradient(
+    to right,
+    rgba(180, 180, 180, 0.226) rgba(0, 0, 0, 0.836)
+  );
+  width: max-content;
+  box-shadow: 0 0 15px 10px rgba(180, 180, 180, 0.144);
+  border-radius: 5px;
+  padding: 0 10px;
+
+}
 .mini-title {
   font-family: "Andada Pro", serif;
   font-weight: 800;
@@ -256,8 +282,11 @@
 .about-section {
   display: flex;
   gap: 1.6rem;
-  padding-top: 1.6rem;
+  /* padding-top: 1.6rem; */
+  justify-content: center;
+  align-items: center;
 }
+
 .text {
   font-family: "Mukta", sans-serif;
   font-weight: 800;
@@ -273,10 +302,14 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  /* align-items: center; */
   margin: 1.6rem 0;
 }
+
 .about-main-text {
+  align-self: center;
+  width: 90%;
+  margin: 1em 0 1em 0;
 }
 .small-Text {
   font-family: "Mukta", sans-serif;
@@ -292,6 +325,12 @@
   font-size: 1.1rem;
 }
 
+.educationBody {
+  margin-top: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
 .dodel {
   display: none;
 }
@@ -314,9 +353,9 @@
 }
 
 .max-imag-carousel {
+  height: 12rem;
   width: 100%;
-  /*  max-width: max-content; */
-  height: 15rem;
+   max-width: 20rem;
 }
 
 .carousel_card {
@@ -346,10 +385,10 @@
 }
 
 .modalImage {
-  width: 100%;
-  max-height: 65vh;
-  /*  max-width: 58vw;
-  max-height: 70vh; */
+  width: auto;
+  max-height: 50vh;
+   max-width: 58vw;
+  
 }
 
 .Gap {
@@ -370,6 +409,11 @@
   width: 16rem;
   height: 8rem;
 }
+
+.intro{
+  font-size: larger;
+}
+
 @media screen and (max-width: 768px) {
   .circulUp,
   .dark-circulUp {
@@ -557,6 +601,11 @@
   }
 }
 
+.bottomCarouselImg {
+  max-height: 6.5em;
+  width: auto !important;
+  max-width: 12em;
+}
 @media screen and (max-width: 320px) {
   .carousel-size {
     width: 17rem;

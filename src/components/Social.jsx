@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
-import Git from "../icons/github2.png";
-import GithubInvert from "../icons/GithubInvert.png";
-import Linkedin from "../icons/linkedin.png";
-import LinkedinInvert from "../icons/LinkedinInvert.png";
-import Dodel from "../icons/dodle1.png";
-import Dodel2 from "../icons/dodle2.png";
+import Git from "../iconsWEBP/github2.webp";
+import GithubInvert from "../iconsWEBP/GithubInvert.webp";
+import Linkedin from "../iconsWEBP/linkedin.webp";
+import LinkedinInvert from "../iconsWEBP/LinkedinInvert.webp";
+import Dodel from "../iconsWEBP/dodle1.webp";
+import Dodel2 from "../iconsWEBP/dodle2.webp";
 
 const Social = () => {
   const darkTheme = useContext(ThemeContext);

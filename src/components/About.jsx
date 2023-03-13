@@ -1,23 +1,24 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
-import Dodel from "../icons/dodle1.png";
-import Dodel2 from "../icons/dodle2.png";
+import Dodel from "../iconsWEBP/dodle1.webp";
+import Dodel2 from "../iconsWEBP/dodle2.webp";
 import Army from "./Army";
 import Education from "./Education";
+import Experience from "./Experience";
+import Title from "./Title";
 const About = () => {
   const darkTheme = useContext(ThemeContext);
   return (
     <div
-      className="fullPage about 
+      className=" about 
       "
       id="About"
     >
-      <div className="">
-        <h2 className={darkTheme ? "dark-title mt-5" : "title mt-5"}> About</h2>
-      </div>
-
       <div className="about-main  ">
         <div className=" d-flex flex-column mx-1 px-5">
+          <div className="px-5" style={{paddingLeft:"rem!importent"}}> 
+            <Title text={"About Me"} headerTag={2} />
+          </div>
           <div
             className={
               darkTheme
@@ -25,15 +26,30 @@ const About = () => {
                 : "text  about-main-text"
             }
           >
-            Industrious worker, ambitious, responsible, team player with
-            excellent communication skills, creative and self-motivated learner
-            always willing to face new challenges.
+            <span>
+              Industrious and ambitious, a team player with excellent
+              communication skills and a self-learner with eager to learn and
+              always willing to face new challenges.
+            </span>
           </div>
 
-          <div className="about-section  ">
-            <Education />
+          <div
+            className={
+              darkTheme
+                ? "dark-text about-main-text  "
+                : "text  about-main-text"
+            }
+          >
+          <Experience/>
+          </div>
 
-            <Army />
+            
+          <div className="about-section  ">
+            <div className="d-flex flex-column">
+              <Education />
+
+              <Army />
+            </div>
 
             <div>
               <img
