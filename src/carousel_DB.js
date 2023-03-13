@@ -383,7 +383,7 @@ let projects = [
     type: "front end",
     addition: " intervew mini project",
     technology: "react, redux-toolkit , responsive, axios, bootstrap",
-    project_link: "https://github.com/elaad24/PHP-school-management-system",
+    project_link: "https://github.com/elaad24/elad-dadon-24-3-2022",
     imagesWEBP: [
       {
         title: "home page - classic ",
