@@ -23,7 +23,7 @@ import Vscode from "../imagesWEBP/iconsWEBP/vscode.webp";
 import Sql from "../imagesWEBP/iconsWEBP/sql.webp";
 import Node from "../imagesWEBP/iconsWEBP/nodejs.webp";
 import photoshop from "../imagesWEBP/iconsWEBP/photoshop.webp";
-import redis from "../imagesWEBP/iconsWEBP/redis.webp";
+import redis from "../imagesWEBP/iconsWEBP/Redis.webp";
 import graphql from "../imagesWEBP/iconsWEBP/graphql.webp";
 import elasticSearch from "../imagesWEBP/iconsWEBP/elasticSearch.webp";
 import reactNative from "../imagesWEBP/iconsWEBP/reactNative.webp";
@@ -83,8 +83,8 @@ const IconsCarusel = () => {
         centerSlidePercentage={19}
         interval="1500"
       >
-        {iconList.map((item) => (
-          <div className=" iconCard   ">
+        {iconList.map((item,index) => (
+          <div className=" iconCard   " id={`index,${index}`}>
             <img
               className=" my-2 card-img-top iconCardSize bottomCarouselImg"
               src={item.pic}

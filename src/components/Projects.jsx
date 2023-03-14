@@ -13,8 +13,8 @@ const Projects = () => {
       </div>
       {console.log("Data", Data)}
       <div className=" d-flex justify-content-center flex-wrap Gap  ">
-        {Data?.map((item) => (
-          <ProjectCard item={item} />
+        {Data?.map((item,index) => (
+          <ProjectCard item={item}  />
         ))}
       </div>
     </div>

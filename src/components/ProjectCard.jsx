@@ -46,12 +46,13 @@ const ProjectCard = ({ item }) => {
           autoPlay={true}
           showStatus={false}
         >
-          {item.imagesWEBP.map((imge) => (
-            <div className="card  d-flex text-center  innerCarousel ">
+          {item.imagesWEBP.map((imge,index) => (
+            <div className="card  d-flex text-center  innerCarousel " id={`${imge.title},${index}`}>
               <h5 className="card-title">{imge.title}</h5>
               <img
                 className="card-img-top max-imag-carousel "
                 src={imge.image}
+                alt=""
               />
             </div>
           ))}

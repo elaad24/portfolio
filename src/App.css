@@ -225,7 +225,6 @@
   box-shadow: 0 0 15px 10px rgba(180, 180, 180, 0.144);
   border-radius: 5px;
   padding: 0 10px;
-
 }
 .mini-title {
   font-family: "Andada Pro", serif;
@@ -323,6 +322,7 @@
   font-family: "Mukta", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 .educationBody {
@@ -356,7 +356,7 @@
   height: 12rem;
   width: fit-content !important;
   align-self: center;
-   max-width: 20rem;
+  max-width: 20rem;
 }
 
 .carousel_card {
@@ -388,8 +388,7 @@
 .modalImage {
   width: auto;
   max-height: 50vh;
-   max-width: 58vw;
-  
+  max-width: 58vw;
 }
 
 .Gap {
@@ -411,7 +410,7 @@
   height: 8rem;
 }
 
-.intro{
+.intro {
   font-size: larger;
 }
 
@@ -551,7 +550,7 @@
 
   .text,
   .dark-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .about-main-text {
@@ -573,7 +572,7 @@
 
   .small-Text,
   .dark-small-Text {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .dodel {
     height: 13rem;
