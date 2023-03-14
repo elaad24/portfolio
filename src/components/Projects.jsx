@@ -11,7 +11,6 @@ const Projects = () => {
       <div className="">
         <Title headerTag={2} text={"Projects"} />
       </div>
-      {console.log("Data", Data)}
       <div className=" d-flex justify-content-center flex-wrap Gap  ">
         {Data?.map((item,index) => (
           <ProjectCard item={item}  />

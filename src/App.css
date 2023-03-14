@@ -61,7 +61,7 @@
 .navbar-bg-bottom {
   background: rgba(255, 255, 255, 0.548);
   height: 13rem;
-  width: 99vw;
+  width: 98.5vw;
   position: absolute;
   z-index: 0;
   filter: blur(0.4rem);
@@ -70,7 +70,7 @@
 .dark-navbar-bg-bottom {
   background: rgba(0, 0, 0, 0.568);
   height: 13rem;
-  width: 99vw;
+  width: 98.5vw;
   position: absolute;
   z-index: 0;
   filter: blur(0.4rem);
