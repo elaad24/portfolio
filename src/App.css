@@ -505,9 +505,10 @@
     width: 14rem;
     height: 6rem;
   }
+  
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .nav-titles,
   .dark-nav-titles {
     font-size: 1.3rem;
@@ -598,6 +599,10 @@
 
   .iconCardSize {
     height: 3rem;
+  }
+
+  .educationBody {
+  flex-direction: column;
   }
 }
 

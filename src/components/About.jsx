@@ -28,7 +28,7 @@ const About = () => {
           >
             <span>
               Industrious and ambitious, a team player with excellent
-              communication skills and a self-learner with eager to learn and
+              communication skills and a self-learner with passion to learn and
               always willing to face new challenges.
             </span>
           </div>
